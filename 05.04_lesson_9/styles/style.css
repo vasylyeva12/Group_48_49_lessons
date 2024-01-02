@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    gap: 20px;
+    
+}
+
+.card{
+    border: 2px dashed black;
+    border-radius: 15px;
+    padding: 10px;
+    width: 350px;
+    text-align: center;
+}
+
+.card img{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.progress-bar-success{
+    position: relative;
+    height: 30px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+.progress-bar-success p{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.progress-bar{
+ height: 100%;   
+background-color: aquamarine;
+position: absolute;
+}
