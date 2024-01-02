@@ -1,0 +1,14 @@
+.cardElem{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius:10px;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.cardElem img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
