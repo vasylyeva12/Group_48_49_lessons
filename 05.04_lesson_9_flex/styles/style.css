@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container div{
+    border:1px solid black;
+    width: 100px;
+    height: 100px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+/* flex-direction - выбор направления основной оси
+
+justify-content - выравнивание вдоль основной оси
+  start
+  center
+  end
+  space-between - 0
+  space-around - 50%
+  space-evenly - 100%
+
+
+align-items - выравнивание вдоль второстепенной оси
+  start
+  center
+  end
+
+gap - добавление отступов между flex-элементами
+
+flex-wrap - разрешение переноса на новую строку
+
+*/
