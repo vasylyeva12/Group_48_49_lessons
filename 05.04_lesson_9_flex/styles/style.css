@@ -16,6 +16,10 @@
 }
 
 /* flex-direction - выбор направления основной оси
+row: lay out the main axis from left to right
+row-reverse: lay out the main axis from right to left
+column: lay out the main axis from top to bottom
+column-reverse: lay out the main axis from bottom to top
 
 justify-content - выравнивание вдоль основной оси
   start

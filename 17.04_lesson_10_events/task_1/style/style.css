@@ -1,0 +1,17 @@
+.color {
+    color: red;
+}
+
+.change_color_text {
+    color: red;
+}
+
+.par_change{
+    color: blue;
+    font-size: 30px;
+}
+
+
+.color_black{
+    background-color: black;
+}
