@@ -43,8 +43,8 @@ const render = ({lastName, firstName, username, email, address}) => {
         container.append(cardElem);
     }
 
-btn1.addEventListener('click', () => getUsers(++id_num))
-btn2.addEventListener('click', () => getUsers(--id_num))
+        btn1.addEventListener('click', () => getUsers(++id_num))
+        btn2.addEventListener('click', () => getUsers(--id_num))
 
 
 
