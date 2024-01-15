@@ -11,6 +11,7 @@
 
 const add_product_form = document.querySelector('.add_product_form');
 const products_container = document.querySelector('.products_container');
+const delete_btn = document.querySelector('.delete_btn');
 
  let all_products = []
 
@@ -36,24 +37,35 @@ add_product_form.addEventListener('submit', event => {
 
 const render_cards = products => {
     products_container.innerText = ''
-    products.forEach(({title, price, discount}) => {
+    products.forEach(({id, title, price, discount}) => {
         const cardElem = document.createElement('div');
         const titleElem = document.createElement('p');
         const priceElem = document.createElement('p');
         const discElem = document.createElement('p');
+        const newPriceElem = document.createElement('p')
+        const deleteElem = document.createElement('span')
 
         titleElem.innerText = `Title: ${title}`;
         priceElem.innerText = `Price: ${price}`;
         discElem.innerText = `Discount: ${discount}`;
+        newPriceElem.innerText = `New price: ${price - (price * discount) / 100}`;
+        deleteElem.innerText = 'X';
 
         cardElem.classList.add('cards')
+       
+        deleteElem.addEventListener('click', () => {
+            all_products = all_products.filter(el => el.id !== id)
+            render_cards(all_products)
+        })
 
-
-        cardElem.append(titleElem, priceElem, discElem)
+        cardElem.append(deleteElem, titleElem, priceElem, discElem, newPriceElem)
         products_container.append(cardElem)
 
     })
 }
 
-
+delete_btn.addEventListener('click', () => {
+    all_products = []
+    render_cards(all_products)
+});
 
