@@ -31,7 +31,7 @@ const add_users = json => {
 
 const render_users = users => {
     container.innerText = ''
-  users.forEach (({name, email, address}) => {
+  users.forEach (({id, name, email, address}) => {
     
     const cardElem = document.createElement('div')
     const nameElem = document.createElement('p')
