@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -73,3 +76,71 @@
       padding: 15px;
     }
   }
+
+  /*  FORM */
+
+  .popup{
+    padding: 32px;
+    width: 420px;
+    border-radius: 20px;
+    border:1px solid black;
+    font-family: 'Nunito', sans-serif;
+  }
+  .registration_form{
+   display: flex;
+   flex-direction: column;
+  }
+  
+  .registration_form > h3{    
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 24px;
+  }
+  .registration_form > input{
+    margin-bottom: 8px;
+    border: 1px solid #cfd8dc;
+    border-radius:12px;
+    font-size: 16px;
+    padding: 14px 16px;
+  }
+
+  .registration_form > input:focus{
+    outline: none;
+    border-color: #FFE44D;
+  }
+  .registration_form > p{
+    color: #7B8E98;
+    font-size: 12px;
+    font-weight: 400;    
+    margin: 24px 0;
+  }
+
+  .registration_form > button{
+    padding: 14px 24px;
+    background-color: #FFE44D;
+    border-radius: 55px;
+    border: 1px solid transparent;   
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    cursor: pointer;
+  }
+
+  .registration_form > div{
+    border-radius: 55px;
+    border: 1px solid #cfd8dc;
+    background-color: white;    
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 14px;
+  }
+
+  
+
+  
+
+  /* MODAL WINDOW */
