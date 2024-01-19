@@ -6,5 +6,12 @@
 
 const burger_icon = document.querySelector('.burger_icon')
 const nav_menu = document.querySelector('.nav_menu')
+const account_btn = document.querySelector('.account_btn')
+const cross_icon = document.querySelector('.cross_icon')
+const popup = document.querySelector('.popup')
+
 
 burger_icon.addEventListener('click', () => nav_menu.classList.toggle('nav_active'))
+account_btn.addEventListener('click', () => popup.classList.add('modal_active'))
+cross_icon.addEventListener('click', () => popup.classList.remove('modal_active'))
+
